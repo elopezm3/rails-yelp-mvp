@@ -1,0 +1,9 @@
+<%= form_with model: @restaurant do |f| %>
+  <%= f.label :name, "Nombre del restaurante" %>
+  <%= f.text_field :name %>
+  <%= f.label :address, "Dirección" %>
+  <%= f.text_field :address %>
+  <%= f.label :name, "Categoría" %>
+  <%= f.text_field :category %>
+  <%= f.submit "Crear restaurante" %>
+<% end %>

@@ -1,0 +1,5 @@
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content, label: "Deja el comentario" %>
+  <%= f.input :rating, as: :radio_buttons, collection: [[0, '0'], [1, '1'], [2, '2'], [3, '3'], [4, '4'], [5, '5']]%>
+  <%= f.submit "Enviar reseña" %>
+<% end %>
